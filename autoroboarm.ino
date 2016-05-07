@@ -115,6 +115,19 @@ void loop()
       {
         ResetVariable();
       }
+      if (ch == 'u')
+      {
+        StepSize = 10;
+      }
+      if (ch == 'i')
+      {
+        StepSize = 5;
+      }
+      if (ch == 'o')
+      {
+        StepSize = 2;
+      }
+      
   }
   Serial.println(CVmaxppos1);
   Serial.println(CVnemopos2);
@@ -355,3 +368,5 @@ void ResetVariable()
   }
   KArPos = 0;
 }
+
+
